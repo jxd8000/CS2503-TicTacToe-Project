@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <main class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <section id="status" class="status" aria-live="polite">Player X to move</section>
+
+    <section id="board" class="board" aria-label="Tic Tac Toe board" role="grid">
+      <!-- draw 9 squares -->
+      <button class="cell" data-i="0" aria-label="cell 1" role="gridcell"></button>
+      <button class="cell" data-i="1" aria-label="cell 2" role="gridcell"></button>
+      <button class="cell" data-i="2" aria-label="cell 3" role="gridcell"></button>
+      <button class="cell" data-i="3" aria-label="cell 4" role="gridcell"></button>
+      <button class="cell" data-i="4" aria-label="cell 5" role="gridcell"></button>
+      <button class="cell" data-i="5" aria-label="cell 6" role="gridcell"></button>
+      <button class="cell" data-i="6" aria-label="cell 7" role="gridcell"></button>
+      <button class="cell" data-i="7" aria-label="cell 8" role="gridcell"></button>
+      <button class="cell" data-i="8" aria-label="cell 9" role="gridcell"></button>
+    </section>
+
+    <div class="actions">
+      <button id="reset" class="reset" aria-label="Restart game">Restart Game</button>
+    </div>
+  </main>
+
+  <!-- main script -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
