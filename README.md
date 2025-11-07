@@ -38,3 +38,10 @@ The goal of this project is to practice Agile teamwork using Scrum methodology, 
 ---
 
 ## 📂 Project Structure
+flowchart LR
+  U[User]
+  U --> UI[UI Components (Board/Square/StatusBar)]
+  UI --> GS[GameService (use cases)]
+  GS --> R[Rules (judgeWinner/applyMove)]
+  GS --> LS[LocalStorageRepo]
+  LS -->|save/load| Storage[(localStorage)]
