@@ -34,7 +34,7 @@ function handleMove(i, btn) {
   btn.textContent = current;
   btn.setAttribute("aria-label", `cell ${i+1} ${current}`);
 
-  const winLine = getWinLine();
+  const winLine = getWinLine(cells);
   if (winLine) {
     showWin(winLine);
     statusEl.textContent = `Player ${current} wins!`;
@@ -52,9 +52,9 @@ function handleMove(i, btn) {
   statusEl.textContent = `Player ${current} to move`;
 }
 
-function getWinLine() {
+function getWinLine(board) {
   for (const [a,b,c] of LINES) {
-    if (cells[a] && cells[a] === cells[b] && cells[a] === cells[c]) {
+    if (board[a] && board[a] === board[b] && board[a] === board[c]) {
       return [a,b,c];
     }
   }

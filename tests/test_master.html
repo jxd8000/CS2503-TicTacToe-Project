@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic Tac Toe - All Unit Tests</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>Tic Tac Toe - Unit Tests</h1>
+
+    <section id="status" class="status" aria-live="polite">Player X to move</section>
+
+    <section id="board" class="board" aria-label="Tic Tac Toe board" role="grid">
+      <button class="cell" data-i="0" aria-label="cell 1" role="gridcell"></button>
+      <button class="cell" data-i="1" aria-label="cell 2" role="gridcell"></button>
+      <button class="cell" data-i="2" aria-label="cell 3" role="gridcell"></button>
+      <button class="cell" data-i="3" aria-label="cell 4" role="gridcell"></button>
+      <button class="cell" data-i="4" aria-label="cell 5" role="gridcell"></button>
+      <button class="cell" data-i="5" aria-label="cell 6" role="gridcell"></button>
+      <button class="cell" data-i="6" aria-label="cell 7" role="gridcell"></button>
+      <button class="cell" data-i="7" aria-label="cell 8" role="gridcell"></button>
+      <button class="cell" data-i="8" aria-label="cell 9" role="gridcell"></button>
+    </section>
+
+    <div class="actions">
+      <button id="reset" class="reset" aria-label="Restart game">Restart Game</button>
+    </div>
+  </main>
+
+  <pre id="test-output"></pre>
+
+  <script src="../js/app.js"></script>
+
+  <script src="test_getWinLine.js"></script>
+  <script src="test_switchTurn.js"></script>
+  <script src="test_resetGame.js"></script>
+  <script src="test_blockFilledCell.js"></script>
+</body>
+</html>
